@@ -25,13 +25,13 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			{
 			name : 'Valued', //Attribute label
 			title : {
-				media : {word : 'Negative'}, //Name of the category presented in the task.
+				media : {word : 'Valued'}, //Name of the category presented in the task.
 				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
 				height : 7 //Used to position the "Or" in the combined block.
 			}, 
 			media : [ //Stimuli
-				{word: 'Bomb'},
-				{word: 'Abuse'},
+				{word: 'Important'},
+				{word: 'Worthwhile'},
 				{word: 'Sadness'},
 				{word: 'Pain'},
 				{word: 'Poison'},
