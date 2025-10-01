@@ -23,6 +23,24 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 
   		attribute1 : 
 			{
+			name : 'Not Valued', //Attribute label
+			title : {
+				media : {word : 'Not Valued'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Unimportant'},
+				{word: 'Unnecessary'},
+				{word: 'Wasteful'},
+				{word: 'Unfair'},
+				{word: 'Excessive'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+		attribute2 : 
+			{
 			name : 'Valued', //Attribute label
 			title : {
 				media : {word : 'Valued'}, //Name of the category presented in the task.
@@ -31,30 +49,10 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
 			}, 
 			media : [ //Stimuli
 				{word: 'Important'},
+				{word: 'Necessary'},
 				{word: 'Worthwhile'},
-				{word: 'Sadness'},
-				{word: 'Pain'},
-				{word: 'Poison'},
-				{word: 'Grief'}
-			], 
-			//Can change color and size of the targets here.
-			css : {color:'#31b404','font-size':'3em'}
-			},
-		attribute2 : 
-			{
-			name : 'Pleasant', //Attribute label
-			title : {
-				media : {word : 'Positive'}, //Name of the category presented in the task.
-				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
-				height : 7 //Used to position the "Or" in the combined block.
-			}, 
-			media : [ //Stimuli
-				{word: 'Paradise'},
-				{word: 'Pleasure'},
-				{word: 'Cheer'},
-				{word: 'Wonderful'},
-				{word: 'Splendid'},
-				{word: 'Love'}
+				{word: 'Beneficial'},
+				{word: 'Needed'}
 			], 
 			//Can change color and size of the targets here.
 			css : {color:'#31b404','font-size':'3em'}
