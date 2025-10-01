@@ -22,9 +22,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
     },
 
     attribute1 : {
-      name : 'Not Valued',
+      name : 'Negative',
       title : {
-        media : {word : 'Not Valued'},
+        media : {word : 'Negative'},
         css : {color:'#31b404','font-size':'2em'},
         height : 7
       }, 
@@ -39,9 +39,9 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
     },
 
     attribute2 : {
-      name : 'Valued',
+      name : 'Positive',
       title : {
-        media : {word : 'Valued'},
+        media : {word : 'Positive'},
         css : {color:'#31b404','font-size':'2em'},
         height : 7
       }, 
