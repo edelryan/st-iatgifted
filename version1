@@ -1,0 +1,61 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'],
+function(APIConstructor, stiatExtension){
+
+  var API = new APIConstructor();
+
+  return stiatExtension({
+
+    // ----- Single Target Category -----
+    category: { 
+      name: 'Gifted Education',
+      title: {
+        media: { word: 'Gifted Education' },
+        css: { color:'#31b404', 'font-size':'2em' },
+        height: 7
+      }
+    },
+
+    // ----- Attribute 1 -----
+    attribute1: {
+      name: 'Valued',
+      title: {
+        media: { word: 'Valued' },
+        css: { color:'#31b404', 'font-size':'2em' },
+        height: 7
+      },
+      stimulusMedia: [
+        { word: 'Important' },
+        { word: 'Necessary' },
+        { word: 'Worthwhile' },
+        { word: 'Beneficial' },
+        { word: 'Needed' },
+        { word: 'Meaningful' }
+      ],
+      stimulusCss: { color:'#31b404', 'font-size':'3em' }
+    },
+
+    // ----- Attribute 2 -----
+    attribute2: {
+      name: 'Not Valued',
+      title: {
+        media: { word: 'Not Valued' },
+        css: { color:'#31b404', 'font-size':'2em' },
+        height: 7
+      },
+      stimulusMedia: [
+        { word: 'Unnecessary' },
+        { word: 'Wasteful' },
+        { word: 'Unfair' },
+        { word: 'Excessive' },
+        { word: 'Unimportant' },
+        { word: 'Irrelevant' }
+      ],
+      stimulusCss: { color:'#31b404', 'font-size':'3em' }
+    },
+
+    // Only needed for images; safe to leave blank
+    base_url: {
+      image: ''
+    }
+  });
+});
