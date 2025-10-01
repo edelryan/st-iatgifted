@@ -9,7 +9,15 @@ define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qua
         css : {color:'#31b404','font-size':'2em'},
         height : 7
       }, 
-      media : [], // no images or words
+      // Use word stimuli instead of images
+      media : [
+        {word : 'Gifted'},
+        {word : 'Talented'},
+        {word : 'High Ability'},
+        {word : 'Advanced'},
+        {word : 'Exceptional'},
+        {word : 'Bright'}
+      ],
       css : {color:'#31b404','font-size':'3em'}
     },
 
